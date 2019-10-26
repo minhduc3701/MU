@@ -1,0 +1,56 @@
+@import "./../CommonCSS/Common";
+
+.matches {
+  grid-column: 2/12;
+  grid-row: 7;
+  margin: 50px 0;
+  display: block;
+  .matches__container {
+    @include display(flex, space-between, center, wrap);
+    .matches__card {
+      margin: 30px 0;
+      @include display(flex, center, center, wrap);
+      flex-direction: column;
+      p {
+        font-size: 15px;
+        text-align: center;
+        width: 85%;
+      }
+      .matches__league {
+        max-width: 100%;
+        min-height: 80px;
+        margin-bottom: 50px;
+      }
+      .matches__info {
+        margin: 10px 0;
+        @include display(flex, center, center, none);
+        .matches__logo {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .matches__result {
+          width: 70px;
+          height: 50px;
+          margin: 0 5px;
+          @include display(flex, center, center, none);
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          font-size: 30px;
+          padding: 10px;
+        }
+      }
+      .matches__name {
+        span {
+          font-weight: bolder;
+        }
+        .vs {
+          color: gray;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

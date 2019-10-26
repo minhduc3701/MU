@@ -1,0 +1,11 @@
+.pick {
+  grid-column: 1/13;
+  grid-row: 4;
+  height: 100vh;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

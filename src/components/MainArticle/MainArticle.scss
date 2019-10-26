@@ -1,0 +1,38 @@
+@import "../CommonCSS/Common";
+
+.article {
+  grid-column: 2/12;
+  grid-row: 3;
+  height: auto;
+  width: 100%;
+  margin: 50px 0;
+  .article__container {
+    @include display(flex, space-between, center, wrap);
+    .article__card {
+      margin: 15px 0;
+      &:hover {
+        img {
+          transform: scale(1.03);
+        }
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 60%;
+        transform: scale(1);
+        transition: 0.8s;
+      }
+    }
+    .bigger {
+      height: 310px;
+      width: 540px;
+      overflow: hidden;
+      @include display(flex, center, center, none);
+      img {
+        margin-right: 20px;
+        width: 60%;
+        height: 100%;
+      }
+    }
+  }
+}

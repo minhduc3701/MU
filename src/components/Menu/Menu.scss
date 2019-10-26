@@ -1,0 +1,47 @@
+@import "./../CommonCSS/Common";
+
+header {
+  grid-column: 1/13;
+  grid-row: 1;
+  max-height: 40vh;
+  width: 100%;
+  .header__container {
+    .header__row {
+      background-color: $black;
+      height: 6vh;
+      @include display(flex, flex-end, center, wrap);
+      .header__list {
+        width: 400px;
+        @include display(flex, center, center, none);
+        .header__logo {
+          max-width: 100px;
+          max-height: 27px;
+          margin: 0 10px;
+        }
+      }
+    }
+    .header__menu {
+      background-color: $red;
+      height: 12vh;
+      nav {
+        @include display(flex, center, center, none);
+
+        ul {
+          @include display(flex, space-around, center, none);
+          width: 500px;
+          margin: 10px 0;
+          li {
+            a {
+              color: white;
+              font-weight: bold;
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
