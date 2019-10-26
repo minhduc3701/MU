@@ -16,6 +16,8 @@ $gray-footer: #2a2a2a;
 $text-p: #232323;
 $text-h2: #1a1a1a;
 
+$trans: translate(-50%, -50%);
+
 @mixin display($display, $justify, $align, $wrap) {
   display: $display;
   justify-content: $justify;
@@ -23,11 +25,24 @@ $text-h2: #1a1a1a;
   flex-wrap: $wrap;
 }
 
+@mixin mid-absolute($absolute, $top, $left, $transform) {
+  position: $absolute;
+  top: $top;
+  left: $left;
+  transform: $transform;
+}
+
 .card {
   background-color: $white-card;
   height: 310px;
   width: 250px;
   overflow: hidden;
+}
+
+.cart__price {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
 }
 
 .wrappers {

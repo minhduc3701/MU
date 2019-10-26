@@ -1,0 +1,20 @@
+@import "./../../../CommonCSS/Common";
+
+.cart__item {
+  max-height: 150px;
+  margin: 5px 0;
+  padding: 0 5px;
+  border-top: 1px solid black;
+  @include display(flex, space-between, center, none);
+  .cart__info {
+    padding-top: 8px;
+    width: 70%;
+    @include display(flex, center, center, none);
+    img {
+      height: 100px;
+      width: 80px;
+      object-fit: cover;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "./../../../CommonCSS/Common";
+
+.size__wrapper {
+  @include display(flex, flex-start, none, wrap);
+  padding: 5px 0 5px 50px;
+  width: 100%;
+  height: 100%;
+}

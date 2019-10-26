@@ -1,0 +1,7 @@
+@import "./../../CommonCSS/Common";
+
+.total {
+  padding: 0 10px;
+  @include display(flex, space-between, center, none);
+  height: 50px;
+}
