@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 
 import Menu from "./../../components/Menu/Menu";
-import Carousel from "./../../components/Carousel/Carousel";
-import MainArticle from "./../../components/MainArticle/MainArticle";
-import PictureSection from "./../../components/PictureSection/PictureSection";
-import PictureSection2 from "./../../components/PictureSection2/PictureSection2";
-import SubArticle from "./../../components/SubArticle/SubArticle";
-import Matches from "./../../components/Matches/Matches";
+import Carousel from "./../../components/HomePage/Carousel/Carousel";
+import MainArticle from "./../../components/HomePage/MainArticle/MainArticle/MainArticle";
+import PictureSection from "./../../components/HomePage/PictureSection/PictureSection";
+import PictureSection2 from "./../../components/HomePage/PictureSection2/PictureSection2";
+import SubArticle from "./../../components/HomePage/SubArticle/SubArticle";
+import Matches from "./../../components/HomePage/Matches/Matches/Matches";
 import Footer from "./../../components/Footer/Footer";
+import "./HomePage.scss";
 
 class HomePage extends React.Component {
   render() {
@@ -19,17 +20,29 @@ class HomePage extends React.Component {
         <Carousel></Carousel>
 
         {/* <!-- Main article --> */}
-        <MainArticle></MainArticle>
+        <section class="article">
+          <div class="article__container">
+            <MainArticle></MainArticle>
+          </div>
+        </section>
         {/* <!-- pic --> */}
         <PictureSection></PictureSection>
 
         {/* <!-- sub article --> */}
-        <SubArticle></SubArticle>
+        <section class="subArticle__container">
+          <SubArticle></SubArticle>
+        </section>
         {/* <!-- pic --> */}
         <PictureSection2></PictureSection2>
 
         {/* <!-- Matches --> */}
-        <Matches></Matches>
+        <section class="matches">
+          <h2>MATCHES</h2>
+          <div class="matches__container">
+            <Matches></Matches>
+          </div>
+        </section>
+
         {/* <!-- Footer --> */}
         <Footer></Footer>
       </Fragment>

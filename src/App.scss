@@ -1,35 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  outline: none;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-$black: #1a1a1a;
 $white-bg: #f8f8f8;
-$red: #c70101;
-$white-card: #ffffff;
-$gray-footer: #2a2a2a;
-$text-p: #232323;
-$text-h2: #1a1a1a;
-
-@mixin display($display, $justify, $align, $wrap) {
-  display: $display;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
-}
-
-.card {
-  background-color: $white-card;
-  height: 310px;
-  width: 250px;
-  overflow: hidden;
-}
-
 .wrappers {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

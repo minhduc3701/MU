@@ -11,12 +11,13 @@ header {
       height: 6vh;
       @include display(flex, flex-end, center, wrap);
       .header__list {
-        width: 400px;
+        width: 350px;
         @include display(flex, center, center, none);
-        .header__logo {
-          max-width: 100px;
-          max-height: 27px;
-          margin: 0 10px;
+        img {
+          max-width: 60px;
+          margin-left: 15px;
+          max-height: 30px;
+          object-fit: contain;
         }
       }
     }

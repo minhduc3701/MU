@@ -12,7 +12,7 @@ class App extends React.Component {
       <div className="wrappers">
         {/* Menu */}
         <Menu></Menu>
-        <StorePage></StorePage>
+        <HomePage></HomePage>
         {/* Footer */}
         <Footer></Footer>
       </div>

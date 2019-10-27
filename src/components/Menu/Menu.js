@@ -16,20 +16,16 @@ class Menu extends React.Component {
           <div className="header__row">
             <ul className="header__list">
               <li>
-                <img className="header__logo" src={img_adidas} alt="Adidas" />
+                <img src={img_adidas} alt="Adidas" />
               </li>
               <li>
-                <img
-                  className="header__logo"
-                  src={img_chevrolet}
-                  alt="Chevrolet"
-                />
+                <img src={img_chevrolet} alt="Chevrolet" />
               </li>
               <li>
-                <img className="header__logo" src={img_aon} alt="Aon" />
+                <img src={img_aon} alt="Aon" />
               </li>
               <li>
-                <img className="header__logo" src={img_kohler} alt="Kohler" />
+                <img src={img_kohler} alt="Kohler" />
               </li>
             </ul>
           </div>
