@@ -3,12 +3,12 @@
 header {
   grid-column: 1/13;
   grid-row: 1;
-  max-height: 40vh;
+  max-height: 13vh;
   width: 100%;
   .header__container {
     .header__row {
       background-color: $black;
-      height: 6vh;
+      height: auto;
       @include display(flex, flex-end, center, wrap);
       .header__list {
         width: 350px;
@@ -23,7 +23,7 @@ header {
     }
     .header__menu {
       background-color: $red;
-      height: 12vh;
+      height: auto;
       nav {
         @include display(flex, center, center, none);
 
@@ -41,6 +41,29 @@ header {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    .header__container {
+      .header__row {
+        .header__list {
+          width: 200px;
+          img {
+            max-width: 30px;
+          }
+        }
+      }
+    }
+    .header__menu {
+      nav {
+        ul {
+          @include display(flex, space-around, center, none);
+          flex-direction: column;
         }
       }
     }
