@@ -1,21 +1,17 @@
 import React, { Fragment } from "react";
 
-import Menu from "./../../components/Menu/Menu";
 import Carousel from "./../../components/HomePage/Carousel/Carousel";
 import MainArticle from "./../../components/HomePage/MainArticle/MainArticle/MainArticle";
 import PictureSection from "./../../components/HomePage/PictureSection/PictureSection";
 import PictureSection2 from "./../../components/HomePage/PictureSection2/PictureSection2";
 import SubArticle from "./../../components/HomePage/SubArticle/SubArticle";
 import Matches from "./../../components/HomePage/Matches/Matches/Matches";
-import Footer from "./../../components/Footer/Footer";
 import "./HomePage.scss";
 
 class HomePage extends React.Component {
   render() {
     return (
       <Fragment>
-        {/* <!-- Menu --> */}
-        <Menu></Menu>
         {/* <!-- Carousel --> */}
         <Carousel></Carousel>
 
@@ -42,9 +38,6 @@ class HomePage extends React.Component {
             <Matches></Matches>
           </div>
         </section>
-
-        {/* <!-- Footer --> */}
-        <Footer></Footer>
       </Fragment>
     );
   }
