@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./ProductItem.scss";
-import img1 from "./51Es1j6oobL._AC_SX425_.jpg";
+import img1 from "./mufc-251561.jpg";
 
 class ProductItem extends React.Component {
   render() {

@@ -31,6 +31,16 @@ class Menu extends React.Component {
           </div>
           {/* <!-- Menu  --> */}
           <div className="header__menu">
+            <div className="header__brand">
+              <img src={img_logo} alt="" />
+              <a href="#" className="header__content">
+                <div>
+                  <span className="white">UNITED</span>
+                  <span className="black">DIRECT</span>
+                  <p>THE OFFICAL ONLINE MEGASTORE</p>
+                </div>
+              </a>
+            </div>
             <nav>
               <ul>
                 <li>
@@ -40,18 +50,7 @@ class Menu extends React.Component {
                   <a href="#">NEWS</a>
                 </li>
                 <li>
-                  <a href="#">PLAYER</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={img_logo} alt="Manchester United" />
-                  </a>
-                </li>
-                <li>
                   <a href="#">HISTORY</a>
-                </li>
-                <li>
-                  <a href="#">ABOUT</a>
                 </li>
                 <li>
                   <a href="#">SHOP</a>

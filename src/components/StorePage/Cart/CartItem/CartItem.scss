@@ -8,7 +8,7 @@
   border-top: 1px solid black;
   @include display(flex, space-between, center, none);
   .cart__info {
-    padding-top: 8px;
+    padding-top: 9px;
     width: 70%;
     @include display(flex, center, center, none);
     img {
@@ -41,9 +41,9 @@
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 14px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
     cursor: pointer;
     transition: 0.3s;
     &:hover {

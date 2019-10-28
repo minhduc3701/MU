@@ -22,23 +22,40 @@ header {
       }
     }
     .header__menu {
-      background-color: $red;
       height: auto;
-      nav {
+      background-color: $red;
+      padding: 10px 0;
+      @include display(flex, space-around, center, none);
+      .header__brand {
         @include display(flex, center, center, none);
-
+        .header__content {
+          span {
+            font-size: 35px;
+            font-weight: bolder;
+          }
+          p {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        img {
+          height: 70px;
+          width: 70px;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+      }
+      nav {
         ul {
+          width: 300px;
           @include display(flex, space-around, center, none);
-          width: 500px;
-          margin: 10px 0;
           li {
+            margin-left: 35px;
             a {
+              font-size: 22px;
               color: white;
               font-weight: bold;
-              img {
-                width: 50px;
-                height: 50px;
-              }
             }
           }
         }
@@ -47,7 +64,95 @@ header {
   }
 }
 
-@media (max-width: 320px) {
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    width: 135%;
+    .header__container {
+      .header__row {
+        .header__list {
+          width: 200px;
+          img {
+            max-width: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .header__menu {
+        flex-direction: column;
+        .header__brand {
+          margin-bottom: 10px;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+          .header__content {
+            span {
+              font-size: 25px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        nav {
+          ul {
+            flex-direction: column;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) and (min-width: 321px) {
+  header {
+    width: 120%;
+    .header__container {
+      .header__row {
+        .header__list {
+          width: 200px;
+          img {
+            max-width: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .header__menu {
+        @include display(flex, center, center, none);
+        flex-direction: column;
+        .header__brand {
+          margin-bottom: 10px;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+          .header__content {
+            span {
+              font-size: 25px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        nav {
+          ul {
+            flex-direction: column;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) and (min-width: 481px) {
   header {
     .header__container {
       .header__row {
@@ -55,15 +160,71 @@ header {
           width: 200px;
           img {
             max-width: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .header__menu {
+        flex-direction: column;
+        .header__brand {
+          margin-bottom: 10px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .header__content {
+            span {
+              font-size: 30px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+        nav {
+          ul {
+            flex-direction: column;
+            display: none;
           }
         }
       }
     }
-    .header__menu {
-      nav {
-        ul {
-          @include display(flex, space-around, center, none);
-          flex-direction: column;
+  }
+}
+@media (max-width: 767px) and (min-width: 601px) {
+  header {
+    .header__container {
+      .header__row {
+        .header__list {
+          width: 200px;
+          img {
+            max-width: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .header__menu {
+        @include display(flex, center, center, none);
+        .header__brand {
+          margin-bottom: 10px;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .header__content {
+            span {
+              font-size: 35px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+        nav {
+          ul {
+            flex-direction: column;
+            display: none;
+          }
         }
       }
     }
