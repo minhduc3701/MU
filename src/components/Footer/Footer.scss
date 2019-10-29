@@ -12,7 +12,6 @@ footer {
   .footer__social {
     width: 500px;
     position: relative;
-    height: 85%;
     ul {
       @include display(flex, space-around, center, none);
       a {
@@ -29,5 +28,17 @@ footer {
     bottom: 0;
     left: 0;
     background-color: $black;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    .footer__social {
+      width: 200px;
+      height: 100%;
+      ul {
+        flex-direction: column;
+      }
+    }
   }
 }

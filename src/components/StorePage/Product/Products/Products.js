@@ -9,6 +9,9 @@ class Products extends React.Component {
       <Fragment>
         <div className="products__list">
           <ProductItem></ProductItem>
+          <ProductItem></ProductItem>
+          <ProductItem></ProductItem>
+          <ProductItem></ProductItem>
         </div>
       </Fragment>
     );
