@@ -1,8 +1,8 @@
 import React from "react";
 
-import img1 from "./EH9NCRdW4AAvsqg.jpg";
-import img2 from "./EHdvygsWwAA8UzJ.jpg";
-import img_avatar from "./DvMzk0jX4AIqufY.jpg";
+import img1 from "./img/EH9NCRdW4AAvsqg.jpg";
+import img2 from "./img/EHdvygsWwAA8UzJ.jpg";
+import img_avatar from "./img/DvMzk0jX4AIqufY.jpg";
 import "./NewsPage.scss";
 
 class NewsPage extends React.Component {

@@ -4,6 +4,8 @@ import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer/Footer";
 import StorePage from "./pages/StorePage/StorePage";
 import NewsPage from "./pages/NewsPage/NewsPage";
+import Contact from "./pages/Contact/Contact";
+import HistoryPage from "./pages/HistoryPage/HistoryPage";
 import "./App.scss";
 
 class App extends React.Component {
@@ -12,7 +14,7 @@ class App extends React.Component {
       <div className="wrappers">
         {/* Menu */}
         <Menu></Menu>
-        <NewsPage></NewsPage>
+        <Contact></Contact>
         {/* Footer */}
         <Footer></Footer>
       </div>
