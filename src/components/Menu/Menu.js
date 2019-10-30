@@ -53,7 +53,7 @@ class Menu extends React.Component {
                   <a href="#">HISTORY</a>
                 </li>
                 <li>
-                  <a href="#">SHOP</a>
+                  <a href="#">CONTACT</a>
                 </li>
               </ul>
             </nav>

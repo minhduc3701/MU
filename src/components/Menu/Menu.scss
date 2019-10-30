@@ -3,12 +3,12 @@
 header {
   grid-column: 1/13;
   grid-row: 1;
-  max-height: 13vh;
   width: 100%;
+  max-height: auto;
   .header__container {
     .header__row {
       background-color: $black;
-      height: auto;
+      height: 6vh;
       @include display(flex, flex-end, center, wrap);
       .header__list {
         width: 350px;
@@ -22,7 +22,7 @@ header {
       }
     }
     .header__menu {
-      height: auto;
+      height: 15vh;
       background-color: $red;
       padding: 10px 0;
       @include display(flex, space-around, center, none);
@@ -116,6 +116,7 @@ header {
     width: 120%;
     .header__container {
       .header__row {
+        height: 5vh;
         .header__list {
           width: 200px;
           img {
@@ -127,6 +128,7 @@ header {
       .header__menu {
         @include display(flex, center, center, none);
         flex-direction: column;
+        height: 13vh;
         .header__brand {
           margin-bottom: 10px;
           img {
@@ -156,6 +158,7 @@ header {
   header {
     .header__container {
       .header__row {
+        height: 5vh;
         .header__list {
           width: 200px;
           img {
@@ -166,6 +169,7 @@ header {
       }
       .header__menu {
         flex-direction: column;
+        height: 13vh;
         .header__brand {
           margin-bottom: 10px;
           img {
@@ -191,10 +195,12 @@ header {
     }
   }
 }
-@media (max-width: 767px) and (min-width: 601px) {
+@media (max-width: 768px) and (min-width: 601px) {
   header {
+    height: 12vh;
     .header__container {
       .header__row {
+        height: 3vh;
         .header__list {
           width: 200px;
           img {
@@ -205,6 +211,7 @@ header {
       }
       .header__menu {
         @include display(flex, center, center, none);
+        height: 9vh;
         .header__brand {
           margin-bottom: 10px;
           img {

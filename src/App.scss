@@ -2,6 +2,6 @@ $white-bg: #f8f8f8;
 .wrappers {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(18vh, auto);
+  grid-template-rows: minmax(10vh, auto);
   background-color: $white-bg;
 }
