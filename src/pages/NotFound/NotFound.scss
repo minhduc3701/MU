@@ -1,0 +1,16 @@
+@import "./../../components/CommonCSS/Common";
+
+h1 {
+  grid-column: 4/10;
+  grid-row: 2;
+  @include display(flex, center, center, none);
+  font-size: 45px;
+  font-weight: 600;
+  margin: 150px 0;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    grid-column: 2/12;
+  }
+}

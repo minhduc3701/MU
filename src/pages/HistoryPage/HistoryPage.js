@@ -10,7 +10,7 @@ class HistoryPage extends React.Component {
       <div className="history">
         <img className="history__cover" src={img1} alt="" />
         <div className="history__content">
-          <h1>MUNICH AIR DISASTER</h1>
+          <h2>MUNICH AIR DISASTER</h2>
           <p>
             The Munich air disaster occurred on 6 February 1958 when British
             European Airways Flight 609 crashed on its third attempt to take off

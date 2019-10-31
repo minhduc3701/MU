@@ -10,12 +10,12 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <h1>CONTACT US</h1>
+        <h2>CONTACT US</h2>
         <p>
           All the essential numbers and email addresses you need to get in touch
           with us at Manchester United.
         </p>
-        <h1>HOW TO CONTACT US</h1>
+        <h2>HOW TO CONTACT US</h2>
         <div className="contact__phone">
           <FontAwesomeIcon
             className="contact__icon"

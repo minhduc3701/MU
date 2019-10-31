@@ -4,7 +4,6 @@
   margin-top: 30px;
   .product__item {
     border: 1px solid white;
-    margin: 0 10px;
     @include display(flex, space-between, center, wrap);
     flex-direction: column;
     &:hover {

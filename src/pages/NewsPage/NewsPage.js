@@ -11,7 +11,7 @@ class NewsPage extends React.Component {
       <div className="news">
         <img className="news__cover" src={img1} alt="" />
         <div className="news__content">
-          <h1>WHAT IMPRESSED OLE ABOUT RASHFORD</h1>
+          <h2>WHAT IMPRESSED OLE ABOUT RASHFORD</h2>
           <h3>
             Often, it's a piece of play that does not get the most attention
             during a game which leaves a lasting impression.
