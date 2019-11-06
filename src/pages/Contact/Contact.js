@@ -1,9 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import img_avatar from "./DvMzk0jX4AIqufY.jpg";
 import "./Contact.scss";
 
 class Contact extends React.Component {

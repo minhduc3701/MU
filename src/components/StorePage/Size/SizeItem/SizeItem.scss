@@ -7,11 +7,15 @@
   &:hover {
     .checkmark {
       border: 1px solid black;
+      font-weight: bold;
+      font-size: 17px;
+      background-color: rgb(214, 213, 213);
     }
   }
   .input {
     opacity: 0;
     @include mid-absolute(absolute, 50%, 50%, $trans);
+    cursor: pointer;
   }
   .checkmark {
     height: 50px;
@@ -21,4 +25,11 @@
     font-size: 15px;
     @include display(flex, center, center, none);
   }
+}
+
+.checked {
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: rgb(214, 213, 213);
 }

@@ -12,6 +12,8 @@ class Products extends React.Component {
           <ProductItem></ProductItem>
           <ProductItem></ProductItem>
           <ProductItem></ProductItem>
+          <ProductItem></ProductItem>
+          <ProductItem></ProductItem>
         </div>
       </Fragment>
     );

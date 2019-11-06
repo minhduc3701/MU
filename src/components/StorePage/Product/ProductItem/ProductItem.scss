@@ -1,7 +1,7 @@
 @import "./../../../CommonCSS/Common";
 
 .product__card {
-  margin-top: 30px;
+  margin: 20px 10px 0 10px;
   .product__item {
     border: 1px solid white;
     @include display(flex, space-between, center, wrap);

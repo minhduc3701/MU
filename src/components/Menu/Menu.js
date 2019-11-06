@@ -89,7 +89,7 @@ class Menu extends React.Component {
           </div>
           {/* <!-- Menu  --> */}
           <div className="header__menu">
-            <Link to="/" exact={true} className="header__brand">
+            <Link to="/" exact="true" className="header__brand">
               <img src={img_logo} alt="" />
               <a href="#" className="header__content">
                 <div>

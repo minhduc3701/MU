@@ -3,5 +3,10 @@
 .products__list {
   width: 100%;
   max-height: 100%;
-  @include display(flex, space-between, center, wrap);
+  @include display(flex, flex-start, none, wrap);
+}
+@media (max-width: 501px) {
+  .products__list {
+    @include display(flex, space-around, center, wrap);
+  }
 }
