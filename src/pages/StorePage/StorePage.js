@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Sizes from "./../../components/StorePage/Size/Sizes/Sizes";
 import Products from "./../../components/StorePage/Product/Products/Products";
+import ProductContainer from "./../../containers/ProductContainer";
 import Carts from "./../../components/StorePage/Cart/Carts/Carts";
 import CartTotal from "./../../components/StorePage/CartTotal/CartTotal";
 import "./StorePage.scss";
@@ -44,7 +45,7 @@ class StorePage extends React.Component {
                 </select>
               </div>
             </div>
-            <Products></Products>
+            <ProductContainer></ProductContainer>
           </div>
         </div>
       </Fragment>

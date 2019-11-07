@@ -3,11 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer/Footer";
-import StorePage from "./pages/StorePage/StorePage";
-import NewsPage from "./pages/NewsPage/NewsPage";
-import Contact from "./pages/Contact/Contact";
-import NotFound from "./pages/NotFound/NotFound";
-import HistoryPage from "./pages/HistoryPage/HistoryPage";
 import "./App.scss";
 import routes from "./routes";
 
