@@ -4,4 +4,9 @@
   width: 100%;
   max-height: auto;
   display: block;
+  h4 {
+    color: gray;
+    font-weight: 300;
+    @include display(flex, center, center, none);
+  }
 }

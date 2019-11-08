@@ -5,11 +5,7 @@ import "./Carts.scss";
 
 class Carts extends React.Component {
   render() {
-    return (
-      <div className="cart__list">
-        <CartItem></CartItem>
-      </div>
-    );
+    return <div className="cart__list">{this.props.children}</div>;
   }
 }
 

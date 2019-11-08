@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 
 import Sizes from "./../../components/StorePage/Size/Sizes/Sizes";
-import Products from "./../../components/StorePage/Product/Products/Products";
 import ProductContainer from "./../../containers/ProductContainer";
 import Carts from "./../../components/StorePage/Cart/Carts/Carts";
+import CartContainer from "./../../containers/CartContainer";
 import CartTotal from "./../../components/StorePage/CartTotal/CartTotal";
 import "./StorePage.scss";
 
@@ -23,7 +23,7 @@ class StorePage extends React.Component {
           <div className="cart__products">
             <h2>CART</h2>
             {/* <!-- Product-list --> */}
-            <Carts></Carts>
+            <CartContainer></CartContainer>
             <div className="cart__total">
               <CartTotal></CartTotal>
               <button className="cart__btn">CHECKOUT</button>

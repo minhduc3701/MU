@@ -1,4 +1,5 @@
 import * as Types from "./../constants/ActionType";
+
 let initialState = [];
 
 const products = (state = initialState, action) => {
