@@ -23,3 +23,18 @@ export const actAddToCart = (product, quantity) => {
     quantity
   };
 };
+
+export const actUpdateCart = (product, quantity) => {
+  return {
+    type: Types.UPDATE_CART,
+    product,
+    quantity
+  };
+};
+
+export const actDeleteCartItem = product => {
+  return {
+    type: Types.DELETE_CART_ITEM,
+    product
+  };
+};

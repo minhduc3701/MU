@@ -7,7 +7,7 @@ class CartTotal extends React.Component {
     return (
       <div className="total">
         <p>TOTAL</p>
-        <p className="cart__price">102$</p>
+        <p className="cart__price">$ 102 </p>
       </div>
     );
   }
