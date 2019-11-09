@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 
-import Sizes from "./../../components/StorePage/Size/Sizes/Sizes";
 import ProductContainer from "./../../containers/ProductContainer";
-import Carts from "./../../components/StorePage/Cart/Carts/Carts";
 import CartContainer from "./../../containers/CartContainer";
 import CartTotal from "./../../components/StorePage/CartTotal/CartTotal";
 import "./StorePage.scss";
@@ -17,12 +15,6 @@ class StorePage extends React.Component {
       <Fragment>
         {/* <!-- Menu --> */}
         <div className="product-action">
-          {/* <!-- Size --> */}
-          <div className="size__container">
-            <h2>SIZES</h2>
-            <Sizes></Sizes>
-          </div>
-
           {/* <!-- Cart --> */}
           <div className="cart__products">
             <h2>CART</h2>
