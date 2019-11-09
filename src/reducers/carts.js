@@ -50,6 +50,11 @@ const carts = (state = initialState, action) => {
       localStorage.setItem("CART", JSON.stringify(state));
       return [...state];
 
+    case Types.RESET_CART:
+      state = [];
+      localStorage.removeItem("CART");
+      return [...state];
+
     default:
       return [...state];
   }

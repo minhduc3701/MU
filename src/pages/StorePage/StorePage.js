@@ -8,6 +8,10 @@ import CartTotal from "./../../components/StorePage/CartTotal/CartTotal";
 import "./StorePage.scss";
 
 class StorePage extends React.Component {
+  checkOut = () => {
+    return alert("");
+  };
+
   render() {
     return (
       <Fragment>
@@ -26,7 +30,6 @@ class StorePage extends React.Component {
             <CartContainer></CartContainer>
             <div className="cart__total">
               <CartTotal></CartTotal>
-              <button className="cart__btn">CHECKOUT</button>
             </div>
           </div>
         </div>

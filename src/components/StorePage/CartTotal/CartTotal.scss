@@ -5,3 +5,19 @@
   @include display(flex, space-between, center, none);
   height: 50px;
 }
+.cart__btn {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $red;
+    color: white;
+    font-size: 24px;
+  }
+}

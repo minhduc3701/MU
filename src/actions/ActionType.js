@@ -38,3 +38,9 @@ export const actDeleteCartItem = product => {
     product
   };
 };
+
+export const actResetCart = () => {
+  return {
+    type: Types.RESET_CART
+  };
+};
