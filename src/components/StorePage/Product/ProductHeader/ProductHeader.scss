@@ -1,0 +1,6 @@
+@import "./../../../CommonCSS/Common";
+
+.products__header {
+  @include display(flex, space-between, center, none);
+  margin-bottom: 15px;
+}

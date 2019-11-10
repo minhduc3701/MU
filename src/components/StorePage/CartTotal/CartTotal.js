@@ -17,8 +17,12 @@ class CartTotal extends React.Component {
   };
 
   showAlert = totalAmount => {
-    alert(`Checkout - Total: $ ${totalAmount}`);
-    this.props.onResetCart();
+    if (totalAmount === 0) {
+      alert("Your cart are empty");
+    } else {
+      alert(`Checkout - Total: $ ${totalAmount}`);
+      this.props.onResetCart();
+    }
   };
 
   render() {

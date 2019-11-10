@@ -14,9 +14,14 @@ footer {
     position: relative;
     ul {
       @include display(flex, space-around, center, none);
-      a {
+      .footer__icon {
         color: white;
-        font-weight: bold;
+        font-size: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          color: $red;
+        }
       }
     }
   }
@@ -38,20 +43,23 @@ footer {
       width: 200px;
       height: 100%;
       ul {
-        flex-direction: column;
+        .footer__icon {
+          font-size: 30px;
+        }
       }
     }
   }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 321px) {
   footer {
-    width: 120%;
+    width: 135%;
     .footer__social {
       width: 200px;
       height: 100%;
       ul {
-        flex-direction: column;
+        .footer__icon {
+          margin: 0 10px;
+        }
       }
     }
   }

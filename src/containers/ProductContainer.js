@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { connect } from "react-redux";
 
 import Products from "./../components/StorePage/Product/Products/Products";
 import ProductItem from "./../components/StorePage/Product/ProductItem/ProductItem";
 import * as Actions from "./../actions/ActionType";
+import ProductHeader from "../components/StorePage/Product/ProductHeader/ProductHeader";
 
 class ProductContainer extends React.Component {
   componentDidMount = () => {
@@ -29,7 +30,12 @@ class ProductContainer extends React.Component {
 
   render() {
     let { products } = this.props;
-    return <Products>{this.showProduct(products)}</Products>;
+    return (
+      <Fragment>
+        <ProductHeader products={products}></ProductHeader>
+        <Products>{this.showProduct(products)}</Products>;
+      </Fragment>
+    );
   }
 }
 
