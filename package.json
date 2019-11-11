@@ -2,17 +2,12 @@
   "name": "mu",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
-  "keywords": [
-    "json-server,heroku, node, REST API"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
     "axios": "^0.19.0",
-    "json-server": "^0.15.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -23,8 +18,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "set PORT=4000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
