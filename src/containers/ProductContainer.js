@@ -5,6 +5,7 @@ import Products from "./../components/StorePage/Product/Products/Products";
 import ProductItem from "./../components/StorePage/Product/ProductItem/ProductItem";
 import * as Actions from "./../actions/ActionType";
 import ProductHeader from "../components/StorePage/Product/ProductHeader/ProductHeader";
+import products from "../reducers/products";
 
 class ProductContainer extends React.Component {
   componentDidMount = () => {
@@ -33,7 +34,7 @@ class ProductContainer extends React.Component {
     return (
       <Fragment>
         <ProductHeader products={products}></ProductHeader>
-        <Products>{this.showProduct(products)}</Products>;
+        <Products>{this.showProduct(products)}</Products>
       </Fragment>
     );
   }
@@ -48,7 +49,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch, props) => {
   return {
     fetchAllProducts: () => {
-      dispatch(Actions.actFetchActionRequest());
+      dispatch(Actions.actShowProduct(products));
     },
     onAddToCart: product => {
       dispatch(Actions.actAddToCart(product, 1));

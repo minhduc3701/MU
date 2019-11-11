@@ -1,20 +1,26 @@
 import * as Types from "./../constants/ActionType";
-import CallApi from "./../ultils/CallApi";
+// import CallApi from "./../ultils/CallApi";
 
-export const actFetchAction = products => {
+export const actShowProduct = products => {
   return {
-    type: Types.FETCH_PRODUCTS,
+    type: Types.SHOW_PRODUCTS,
     products
   };
 };
+// export const actFetchAction = products => {
+//   return {
+//     type: Types.FETCH_PRODUCTS,
+//     products
+//   };
+// };
 
-export const actFetchActionRequest = () => {
-  return dispatch => {
-    return CallApi("products", null).then(res => {
-      dispatch(actFetchAction(res.data));
-    });
-  };
-};
+// export const actFetchActionRequest = () => {
+//   return dispatch => {
+//     return CallApi("products", null).then(res => {
+//       dispatch(actFetchAction(res.data));
+//     });
+//   };
+// };
 
 export const actAddToCart = (product, quantity) => {
   return {
